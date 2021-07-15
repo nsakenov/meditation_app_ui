@@ -7,5 +7,6 @@
 ### Screen 2: 
 ![Simulator Screen Shot - iPhone 11 Pro - 2021-07-15 at 20 31 07](https://user-images.githubusercontent.com/22214915/125806385-1c972db2-e51f-4ed6-be0f-11ea56c44d48.png)
 
+### App demo video:
 
 https://user-images.githubusercontent.com/22214915/125806451-49ebb63b-990c-4eb1-9520-a2883ce3c8ef.mov
