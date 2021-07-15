@@ -1,16 +1,11 @@
-# meditation_app_ui
+# Meditation App in Flutter
 
-A new Flutter project.
+### Screen 1: 
+![Simulator Screen Shot - iPhone 11 Pro - 2021-07-15 at 20 30 49](https://user-images.githubusercontent.com/22214915/125806390-277a3675-d253-40d9-bb93-a6b067bae318.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+### Screen 2: 
+![Simulator Screen Shot - iPhone 11 Pro - 2021-07-15 at 20 31 07](https://user-images.githubusercontent.com/22214915/125806385-1c972db2-e51f-4ed6-be0f-11ea56c44d48.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://user-images.githubusercontent.com/22214915/125806451-49ebb63b-990c-4eb1-9520-a2883ce3c8ef.mov
