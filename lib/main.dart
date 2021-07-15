@@ -66,13 +66,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Good Morning Nurbol',
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline5!
-                        .copyWith(fontWeight: FontWeight.w700),
+                    'Good Morning, Nurbol',
+                    style: Theme.of(context).textTheme.headline4!.copyWith(
+                          fontWeight: FontWeight.w700,
+                        ),
                   ),
                   Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 30),
                     padding: EdgeInsets.symmetric(
                       horizontal: 30,
                       vertical: 5,
@@ -83,14 +84,82 @@ class HomeScreen extends StatelessWidget {
                     ),
                     child: TextField(
                       decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Search',
                         icon: SvgPicture.asset('assets/icons/search.svg'),
                       ),
+                    ),
+                  ),
+                  Expanded(
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      childAspectRatio: 0.85,
+                      crossAxisSpacing: 20,
+                      mainAxisSpacing: 20,
+                      children: [
+                        CategoryCard(
+                          svgSrc: 'assets/icons/Hamburger.svg',
+                          title: 'Diet Recommendation',
+                        ),
+                        CategoryCard(
+                          svgSrc: 'assets/icons/Excrecises.svg',
+                          title: 'Kegel Exercises',
+                        ),
+                        CategoryCard(
+                          svgSrc: 'assets/icons/Meditation.svg',
+                          title: 'Meditation',
+                        ),
+                        CategoryCard(
+                          svgSrc: 'assets/icons/yoga.svg',
+                          title: 'Yoga',
+                        ),
+                      ],
                     ),
                   )
                 ],
               ),
             ),
           )
+        ],
+      ),
+    );
+  }
+}
+
+class CategoryCard extends StatelessWidget {
+  CategoryCard({
+    required this.svgSrc,
+    required this.title,
+  });
+
+  final String svgSrc;
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(13),
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(0, 17),
+              blurRadius: 17,
+              spreadRadius: -27,
+            ),
+          ]),
+      child: Column(
+        children: [
+          Spacer(),
+          SvgPicture.asset(svgSrc),
+          Spacer(),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style:
+                Theme.of(context).textTheme.headline6!.copyWith(fontSize: 15),
+          ),
         ],
       ),
     );
